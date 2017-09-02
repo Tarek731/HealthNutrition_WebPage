@@ -1,0 +1,36 @@
+{
+  "name": "HealthNutrition_WebPage",
+  "version": "1.0.0",
+  "description": ">Get Fast, Reliable Health Nutrition Information on the Go Convenient and easy way to  make the healthy choice everytime.  Never  the APP allows you to look up nutritional information for millions of foods at the click of a button powerd by an extensive food database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarek731/HealthNutrition_WebPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tarek731/HealthNutrition_WebPage/issues"
+  },
+  "dependencies": {
+    "axios": "^0.12.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.1",
+    "morgan": "^1.7.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.13",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack": "^1.13.1"
+  }
+}
