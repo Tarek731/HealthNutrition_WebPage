@@ -29,8 +29,8 @@ module.exports = (
     <Route path="/" component={Main}>
 
       {/* If user selects Child1 then show the appropriate component*/}
-      <Route path="Login" component={Login} />
-      <Route path="Signup" component={Signup} />
+      <Route path="login" component={Login} />
+      <Route path="signup" component={Signup} />
 
       
 
