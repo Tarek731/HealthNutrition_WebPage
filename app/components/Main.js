@@ -15,10 +15,13 @@ var Main = React.createClass({
           <h2><strong>Which Child???</strong></h2>
           <p><em>A journey through the whimsical world of React Routing</em></p>
           <hr />
-          <p>
-            <Link to="/login"><button className="btn btn-primary btn-lg">login</button></Link>
-            
-          </p>
+             <div>
+                <Link to="/Signup"><button className="btn btn-primary btn-lg">Signup</button></Link>
+                <Link to="/login"><button type="button" class="btn btn-primary">Login</button></Link>
+              </div>  
+          
+       
+        
         </div>
 
         <div className="row">

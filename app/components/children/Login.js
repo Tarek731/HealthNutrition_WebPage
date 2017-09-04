@@ -7,7 +7,9 @@ var React = require("react");
 var Login = React.createClass({
   render: function() {
     return (
-      <h1>I'm a Login!</h1>
+      <div>
+      <button type="button" class="btn btn-primary">Login</button>
+		</div>    
     );
   }
 });
