@@ -4,7 +4,9 @@
   "description": ">Get Fast, Reliable Health Nutrition Information on the Go Convenient and easy way to  make the healthy choice everytime.  Never  the APP allows you to look up nutritional information for millions of foods at the click of a button powerd by an extensive food database",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --use_strict index.js",
+    "bundle": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,13 +20,16 @@
   },
   "dependencies": {
     "axios": "^0.12.0",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "material-ui": "^0.19.1",
     "mongoose": "^4.5.1",
     "morgan": "^1.7.0",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "react-router": "2.4.1"
+    "react": "^0.14.9",
+    "react-dom": "^0.14.9",
+    "react-router": "^2.4.1",
+    "react-tap-event-plugin": "^2.0.1",
+    "validator": "^8.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.3.13",

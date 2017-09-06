@@ -27,7 +27,8 @@ module.exports = (
 // The high level component is the Router component
   <Router history={browserHistory}>
 
-    <Route path="/" component={Main}>
+  <Route path="/" component={Main}>
+
 
       {/* If user selects Child1 then show the appropriate component*/}
       <Route path="login" component={Login} />
