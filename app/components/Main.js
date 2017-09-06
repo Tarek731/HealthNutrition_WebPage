@@ -15,10 +15,14 @@ var Main = React.createClass({
             <div className="navbar-header">
             </div>
               <div className="collapse navbar-collapse" id="myNavbar"> 
+                    <ul className="nav navbar-nav navbar-left">
+                     <li><Link to="/landing"><span className="glyphicon glyphicon-cloud"></span> Home</Link></li>
+
+                    </ul>
                     <ul className="nav navbar-nav navbar-right">
-                        <li><a href="https://github.com/Tarek731/Project_2">About Us</a></li>
+                        <li><a href="https://github.com/Tarek731/Project_2"> About Us</a></li>
                         <li><Link to="/signup"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
-                        <li><Link to="/login"><span className="glyphicon glyphicon-log-in"></span>Login</Link></li>
+                        <li><Link to="/login"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
                     </ul>
               </div>
           </div>      
