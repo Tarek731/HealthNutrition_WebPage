@@ -31,6 +31,12 @@ db.on("error", function(err) {
 db.once("open", function() {
   console.log("Mongoose connection successful.");
 });
+
+// Any non API GET routes will be directed to our React App and handled by React Router
+app.get("*", function(req, res) {
+ res.sendFile(__dirname + "/public/index.html");
+});
+
 // Listener
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);

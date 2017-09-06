@@ -10,23 +10,20 @@ var Main = React.createClass({
 
     return (
       <div>
-        <nav class="navbar navbar-default navbar-inverse navbar-toggleable-lg">
-          <div class="container-fluid">
-            <div class="navbar-header">
+        <nav className="navbar navbar-default">
+          <div className="container-fluid">
+            <div className="navbar-header">
             </div>
-              <div class="collapse navbar-collapse" id="myNavbar"> 
-                    <ul class="nav navbar-nav navbar-right">
+              <div className="collapse navbar-collapse" id="myNavbar"> 
+                    <ul className="nav navbar-nav navbar-right">
                         <li><a href="https://github.com/Tarek731/Project_2">About Us</a></li>
-                        <li><a href="/sign-up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><Link to="/signup"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
+                        <li><Link to="/login"><span className="glyphicon glyphicon-log-in"></span>Login</Link></li>
                     </ul>
               </div>
           </div>      
         </nav>      
-          <div>
-            <Link to="/Signup"><button className="btn btn-primary btn-lg">Signup</button></Link>
-            <Link to="/login"><button className="btn btn-primary btn-lg">Login</button></Link>
-          </div>  
+          
             <div className="row">
               {this.props.children}
             </div>
