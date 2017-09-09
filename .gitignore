@@ -1,2 +1,5 @@
 DS_store
 node_modules/
+.DS_Store
+HealthNutrition.sublime-project
+HealthNutrition.sublime-workspace
