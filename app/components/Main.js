@@ -18,7 +18,7 @@ var Main = React.createClass({
                 <li><Link to='/login'><span className='glyphicon glyphicon-log-in' /> Log In </Link></li>
               </ul>
               <ul className='nav navbar-nav navbar-left'>
-                <li><Link to='/home'><span className='glyphicon glyphicon-home' /> Home </Link></li>
+                <li><Link to='/landing'><span className='glyphicon glyphicon-home' /> Home </Link></li>
               </ul>
             </div>
           </div>
