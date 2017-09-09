@@ -1,38 +1,36 @@
 // Include React
-var React = require("react");
+var React = require('react');
 // Including the Link component from React Router to navigate within our application without full page reloads
-var Link = require("react-router").Link;
+var Link = require('react-router').Link;
 
 var Main = React.createClass({
 
   // Here we render the function
-  render: function() {
-
+  render: function () {
     return (
       <div>
-        <nav className="navbar navbar-default">
-          <div className="container-fluid">
-            <div className="navbar-header">
-            </div>
-              <div className="collapse navbar-collapse" id="myNavbar"> 
-                    <ul className="nav navbar-nav navbar-left">
-                     <li><Link to="/landing"><span className="glyphicon glyphicon-cloud"></span> Home</Link></li>
+        <nav className='navbar navbar-default'>
+          <div className='container-fluid'>
+            <div className='navbar-header' />
+            <div className='collapse navbar-collapse' id='myNavbar'>
+              <ul className='nav navbar-nav navbar-left'>
+                <li><Link to='/landing'><span className='glyphicon glyphicon-cloud' /> Home</Link></li>
 
-                    </ul>
-                    <ul className="nav navbar-nav navbar-right">
-                        <li><a href="https://github.com/Tarek731/Project_2"> About Us</a></li>
-                        <li><Link to="/signup"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
-                        <li><Link to="/login"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
-                    </ul>
-              </div>
-          </div>      
-        </nav>      
-          
-            <div className="row">
-              {this.props.children}
+              </ul>
+              <ul className='nav navbar-nav navbar-right'>
+                <li><a href='https://github.com/Tarek731/Project_2'> About Us</a></li>
+                <li><Link to='/signup'><span className='glyphicon glyphicon-user' /> Sign Up</Link></li>
+                <li><Link to='/login'><span className='glyphicon glyphicon-log-in' /> Login</Link></li>
+              </ul>
             </div>
-      </div>   
-      
+          </div>
+        </nav>
+
+        <div className='row'>
+          {this.props.children}
+        </div>
+      </div>
+
     );
   }
 });
