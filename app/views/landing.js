@@ -9,29 +9,11 @@ var ReactDOM = require('react-dom');
 const Landing = React.createClass({
   render: function () {
     return (
-      <div>
-        <nav className='navbar navbar-inverse'</nav>
-          <div className="container-fluid" >
-            <a className='navbar-brand' href='#'>Title</a>
-            <ul className='nav navbar-nav' />
-            <li className='active'>
-              <a href='#'>Home</a>
-            </li>
-            <li>
-              <a href='#'>Link</a>
-            </li>
-          </div>
-      </div>
+      <div />
     );
   }
 });
 
-
-
-
-
-
 // Export the component back for use in other files
-ReactDOM.render(<Landing />, document.getElementById('app'));
 
 module.exports = Landing;

@@ -5,7 +5,7 @@ var Link = require('react-router').Link;
 
 var Main = React.createClass({
 
-  // Here we render the function
+// Here we render the function
   render: function () {
     return (
       <div>
@@ -13,14 +13,12 @@ var Main = React.createClass({
           <div className='container-fluid'>
             <div className='navbar-header' />
             <div className='collapse navbar-collapse' id='myNavbar'>
-              <ul className='nav navbar-nav navbar-left'>
-                <li><Link to='/landing'><span className='glyphicon glyphicon-cloud' /> Home</Link></li>
-
-              </ul>
               <ul className='nav navbar-nav navbar-right'>
-                <li><a href='https://github.com/Tarek731/Project_2'> About Us</a></li>
-                <li><Link to='/signup'><span className='glyphicon glyphicon-user' /> Sign Up</Link></li>
-                <li><Link to='/login'><span className='glyphicon glyphicon-log-in' /> Login</Link></li>
+                <li><Link to='/signup'><span className='glyphicon glyphicon-user' /> Sign Up </Link></li>
+                <li><Link to='/login'><span className='glyphicon glyphicon-log-in' /> Log In </Link></li>
+              </ul>
+              <ul className='nav navbar-nav navbar-left'>
+                <li><Link to='/home'><span className='glyphicon glyphicon-home' /> Home </Link></li>
               </ul>
             </div>
           </div>
@@ -35,5 +33,5 @@ var Main = React.createClass({
   }
 });
 
-// Export the component back for use in other files
+  // Export the component back for use in other files
 module.exports = Main;
