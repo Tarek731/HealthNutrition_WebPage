@@ -17,7 +17,8 @@ powerd by an extensive food database
 ___
 ### Roles
 >Back-end: Chiraq, Juan
-Front-end: Tarek, Parita
+Front-end: Tarek, Parita,John
+
 
 ___
 ### Functionality
