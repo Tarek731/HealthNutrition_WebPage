@@ -10,12 +10,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!-- Bootstrap JS -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<!--  -->
-		<script src="assets/skrollr.min.js"></script>
-		<script src="https://cdn.tutorialzine.com/misc/enhance/v2.js" async></script>
-  <script>
-    skrollr.init();
-  </script>
+
 		<!-- Compiled and minified CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 		
@@ -26,6 +21,19 @@
 		<!-- google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+sans" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- Bring in React and single-page-react dependencies as globals -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.1/react.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.1/JSXTransformer.js"></script>
+		<script src="single-page-react.js"></script>
+	  
+		<!-- Set which DOM element to insert React components into -->
+		<script>
+  			React.Router.routedElement = document.body //or whatever element you prefer
+    </script>  
+
+    <!-- Bring in the home react component -->
+		<script src="./app/views/Landing.js" type="text/js"></script>
 
 	</head>
 	
@@ -38,11 +46,6 @@
 		<script src="bundle.js"></script>
 		<!-- Compiled and minified JavaScript -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-		<script src="assets/skrollr.min.js"></script>
-		<script src="https://cdn.tutorialzine.com/misc/enhance/v2.js" async></script>
-  <script>
-    skrollr.init();
-  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="//code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
