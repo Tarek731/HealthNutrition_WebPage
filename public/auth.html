@@ -9,6 +9,11 @@
   <!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title"> -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="http://platform.fatsecret.com/js?key=f1b3a606a7f04808a468ebcd2ab47b68"></script>
+    <script>
+        fatsecret.setContainer("my_container");
+        fatsecret.setCanvas("home");
+    </script>
 </head>
 
 <body>
@@ -32,6 +37,10 @@
     <div class="row">
       <div id="chat">
       </div>
+    </div>
+
+    <div class="row">
+      <div id="my_container" className="fatsecret_container"></div>
     </div>
   </div>
   <!-- Custom Script -->
@@ -69,7 +78,11 @@
     })
     .done(function(res) {
       console.log("auth Put done");
-     // console.log(res);
+     chatDiv.append('<p>'+JSON.stringify(res)+'</p>')
+     console.log("cookie - fatsecret_session_key="+res.session_key + "; path=/");
+     document.cookie = "fatsecret_session_key="+res.session_key + "; path=/";
+     console.log("cookie set");
+
 
 
     });
