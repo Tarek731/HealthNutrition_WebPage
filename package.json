@@ -2,7 +2,7 @@
   "name": "react-example",
   "version": "1.0.0",
   "description": ">Get Fast, Reliable Health Nutrition Information on the Go Convenient and easy way to  make the healthy choice everytime.  Never  the APP allows you to look up nutritional information for millions of foods at the click of a button powerd by an extensive food database",
-<<<<<<< HEAD
+
   "main": "public/index.html",
   "scripts": {
     "test": "node test/test.js",
