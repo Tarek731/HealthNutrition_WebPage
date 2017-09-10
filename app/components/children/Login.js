@@ -1,11 +1,71 @@
+import {hashHistory} from 'react-router';
 // Include React
 var React = require("react");
-
+var Login = require("./Login")
 // Create the Header component
 // Notice how the header uses React.createClass
 // Notice how it uses a render function which specifies what will be displayed by the component
+// Requiring our helper for making API calls
+var helpers = require("../../utils/helpers");
+
 var Login = React.createClass({
+ //Init component
+  getInitialState: function() {
+    return { 
+      username: "" ,
+      password: "",
+       redirect: false
+
+    };
+  }, 
+
+  handleChange(event) {
+   
+    if(event.target.id === 'username'){
+       this.setState({username: event.target.value});
+    }
+
+    if(event.target.id === 'password'){
+       this.setState({password: event.target.value});
+    }
+  },
+
+  handleLogin(event) {
+    console.log("logging in")
+    var username = this.state.username
+    console.log(username + ' is the username inside login')
+    //console.log('the total data is :' + this.state.firstname, this.state.lastname, this.state.email, this.state.password);
+    helpers.loginUser({ 
+      username: username,
+      password: this.state.password 
+    }).then(function(response, username){
+
+      var user = JSON.parse(response.config.data).username
+        console.log("RESULTS", response.data.authenticated);
+        var isAuthenticated = response.data.authenticated;
+console.log('*'+user+'*')
+        if(isAuthenticated){
+          document.cookie = "user="+user;
+          var x = document.cookie
+          console.log("cookie " + x)
+          hashHistory.push('/profile/'+ user)
+          // window.location.href = "/#/profile";
+        } else {
+          // show error and stay on apge
+          alert("failed to authenticate");
+        }
+    })
+    event.preventDefault();
+  },
+
+// Here we render the component
   render: function() {
+   const { redirect } = this.state;
+
+    if (redirect) {
+       return <Redirect to='/profile'/>;
+    }
+
     return (
         <div className="display">
 			<section id="login">
@@ -14,51 +74,36 @@ var Login = React.createClass({
                         <div className="col-xs-12">
                             <div className="form-wrap">
                                 <h1> Log-In</h1>
-                                <form role="form" action="/login" method="post" id="login-form" autocomplete="off">
+                                <form orm onSubmit = {this.handleLogin} className="loginForm">
                                     <div className="form-group">
-                                        <label for="username" className="sr-only">Username</label>
-                                        <input type="text" name="username" id="username" className="form-control" placeholder="Username"/>
+                                        <label for="username">Username</label>
+                                        <input 
+                                        type="text" value={this.state.username} onChange={this.handleChange} className="form-control" id="username" required/>
                                     </div>
+                                    
                                     <div className="form-group">
-                                        <label for="password" className="sr-only">Password</label>
-                                        <input type="password" name="password" id="password" className="form-control" placeholder="Password"/>
+                                        <label for="userPassword">Password</label>
+                                        <input type="password"  value={this.state.password} onChange={this.handleChange} className="form-control" id="password" required/>
                                     </div>
+                                    
                                     <div className="checkbox">
                                         <span className="character-checkbox" onclick="showPassword()"></span>
                                         <span className="label">Show password</span>
                                     </div>
+                                    <div className="form-group">
                                     <input type="submit" id="btn-login" className="btn btn-custom btn-lg btn-block" value="Log in"/>
+                                    </div>
                                 </form>
-                                <a href="js/style.js" className="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
+                                
+                                <a href="/Register" className="link" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
                                 <hr/>
                             </div>
                         </div> 
                     </div>
                 </div>
              </section>
-       
-	            <div className="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
-	                <div className="modal-dialog modal-sm">
-	                    <div className="modal-content">
-	                        <div className="modal-header">
-	                            <button type="button" className="close" data-dismiss="modal">
-	                                <span aria-hidden="true">×</span>
-	                                <span className="sr-only">Close</span>
-	                            </button>
-	                            <h4 className="modal-title">Recovery password</h4>
-	                        </div>
-	                        <div className="modal-body">
-	                            <p>Type your email account</p>
-	                            <input type="email" name="recovery-email" id="recovery-email" className="form-control" autocomplete="off"/>
-	                        </div>
-	                        <div className="modal-footer">
-	                            <button type="button" className="btn btn-default" data-dismiss="modal">Cancel</button>
-	                            <button type="button" className="btn btn-custom">Recovery</button>
-	                        </div>
-	                    </div>
-	            	</div>
-	    		</div>
-    	</div>
+    	
+        </div>
     );
   }
 });
