@@ -8,8 +8,8 @@ const Main = React.createClass({
 // Here we render the function
   render: function () {
     return (
-      <div>
-      
+
+      <div >
         <nav className='navbar navbar-inverse'>
           <div className='container-fluid'>
             <ul className='list-inline'>
