@@ -9,7 +9,7 @@ var LoginRequired = React.createClass({
 
     return (
       <div className ="alert alert-danger">
-        <h2>You must log in before creating a trek</h2>
+        <h2>You must log in before creating a profile</h2>
       </div>
            
     );
