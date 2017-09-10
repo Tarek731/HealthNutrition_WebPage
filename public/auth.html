@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Auth - Express</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title"> -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+
+    <form id="message_form">
+      <div class="form-group">
+        <label for="message">Create User</label>
+        <input type="text" class="form-control" id="message">
+        <br />
+            <div class="row">
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-success submit">Submit</button>
+              </div>
+             
+            </div>
+          </div>
+        </form>
+
+    <div class="row">
+      <div id="chat">
+      </div>
+    </div>
+  </div>
+  <!-- Custom Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
+
+  <script>
+      var messageInput = $("#message");
+  var messageForm = $("#message_form");
+  var chatDiv = $("#chat");
+
+  // Adding an event listener for when the form is submitted
+  $(messageForm).on("submit", function handleFormSubmit(event) {
+    console.log("submit event listener")
+    event.preventDefault();
+    // Wont submit the post if we are missing a body or a title
+    if (!messageInput.val().trim()) {
+      return;
+    }
+    // alert(messageInput.val().trim());
+
+    // // Constructing a newPost object to hand to the database
+    var newMessage = {
+      user: messageInput.val().trim()
+    };
+    // $("#final_span").text("");
+    // messageInput.val("");
+
+    // console.log(newMessage);
+    // chatDiv.append('<p>'+newMessage.message+'</p>');
+
+    $.ajax({
+      method: "PUT",
+      url: "/auth",
+      data: newMessage
+    })
+    .done(function(res) {
+      console.log("auth Put done");
+     // console.log(res);
+
+
+    });
+
+
+
+  });
+
+  </script>
+
+</body>
+
+</html>
