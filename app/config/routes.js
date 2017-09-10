@@ -18,7 +18,7 @@ var browserHistory = router.browserHistory;
 // Include the IndexRoute (catch-all route)
 var IndexRoute = router.IndexRoute;
 
-var Main = require('../components/Main');
+var Main = require("../components/Main");
 var Login = require('../components/children/Login');
 var Signup = require('../components/children/Signup');
 var Landing = require('../views/Landing');
