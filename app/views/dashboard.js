@@ -5,6 +5,11 @@ var React = require("react");
 // Notice how the header uses React.createClass
 // Notice how it uses a render function which specifies what will be displayed by the component
 var Dashboard = React.createClass({
+	componentDidMount: function() {
+	  
+	    fatsecret.setContainer("my_container");
+		fatsecret.setCanvas("home");
+  },
   render: function() {
     return (
 		<div className="container">
