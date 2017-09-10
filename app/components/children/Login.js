@@ -1,10 +1,8 @@
 // Include React
-var React = require('react');
+const React = require('react');
+const Link = require('react-router').Link;
 
-// Create the Header component
-// Notice how the header uses React.createClass
-// Notice how it uses a render function which specifies what will be displayed by the component
-var Login = React.createClass({
+const Login = React.createClass({
   render: function () {
     return (
       <div className='display'>
@@ -37,7 +35,7 @@ var Login = React.createClass({
           </div>
         </section>
 
-        <div className='modal fade forget-modal' tabindex='-1' role='dialog' aria-labelledby='myForgetModalLabel' aria-hidden='true'>
+        <div className='modal fade forget-modal' tabIndex='-1' role='dialog' aria-labelledby='myForgetModalLabel' aria-hidden='true'>
           <div className='modal-dialog modal-sm'>
             <div className='modal-content'>
               <div className='modal-header'>

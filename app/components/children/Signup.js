@@ -6,38 +6,19 @@ var Signup = React.createClass({
   render: function () {
     return (
       <div className='display'>
-        <section id='login'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-xs-12'>
-                <div className='form-wrap'>
-                  <h1>Create An Account</h1>
-                  <form role='form' action='/sign-up' method='post' id='login-form' autoComplete='off'>
-                    <div className='form-group'>
-                      <label for='email' className='sr-only'>Email</label>
-                      <input type='email' name='email' id='email' className='form-control' placeholder='Your email address' />
-                    </div>
-                    <div className='form-group'>
-                      <label for='username' className='sr-only'>Username</label>
-                      <input type='text' name='username' id='username' className='form-control' placeholder='Pick a username' />
-                    </div>
-                    <div className='form-group'>
-                      <label for='password' className='sr-only'>Password</label>
-                      <input type='password' name='password' id='password' className='form-control' placeholder='Create a password' />
-                    </div>
-                    <div className='checkbox'>
-                      <span className='character-checkbox' onclick='showPassword()' />
-                      <span className='label'>Show password</span>
-                    </div>
-                    <input type='submit' id='btn-login' className='btn btn-custom btn-lg btn-block' value='Sign Up' />
-                  </form>
-                  <Link to='/login' className='forget' data-toggle='modal' data-target='.forget-modal'>Already Have an Account? Go to Log-In</Link>
-                  <hr />
-                </div>
+        <div className='col-xs-12 col-'>
+          <div className='form-wrap'>
+            <h1>Create An Account</h1>
+            <form >
+              <div className='form-group'>
+                <label htmlFor='email' className='sr-only'>Email</label>
+                <input type='email' name='email' id='email' className='form-control' placeholder='Your email address' />
               </div>
-            </div>
+            </form>
+            <Link to='/login' className='forget'>Already Have an Account? Go to Log-In</Link>
+            <hr />
           </div>
-        </section>
+        </div>
       </div>
     );
   }

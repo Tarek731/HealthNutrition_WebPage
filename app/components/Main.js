@@ -1,26 +1,21 @@
 // Include React
-var React = require('react');
-// Including the Link component from React Router to navigate within our application without full page reloads
-var Link = require('react-router').Link;
+const React = require('react');
+const ReactDOM = require('react-dom');
+const Link = require('react-router').Link;
 
-var Main = React.createClass({
+const Main = React.createClass({
 
 // Here we render the function
   render: function () {
     return (
       <div>
-        <nav className='navbar navbar-default'>
+      
+        <nav className='navbar navbar-inverse'>
           <div className='container-fluid'>
-            <div className='navbar-header' />
-            <div className='collapse navbar-collapse' id='myNavbar'>
-              <ul className='nav navbar-nav navbar-right'>
-                <li><Link to='/signup'><span className='glyphicon glyphicon-user' /> Sign Up </Link></li>
-                <li><Link to='/login'><span className='glyphicon glyphicon-log-in' /> Log In </Link></li>
-              </ul>
-              <ul className='nav navbar-nav navbar-left'>
-                <li><Link to='/landing'><span className='glyphicon glyphicon-home' /> Home </Link></li>
-              </ul>
-            </div>
+            <ul className='list-inline'>
+              <li><a className='btn btn-default action-button' role='button' href='login'>Log In</a></li>
+              <li><a className='btn btn-default action-button' role='button' href='signup'>Sign Up</a></li>
+            </ul>
           </div>
         </nav>
 
@@ -33,5 +28,5 @@ var Main = React.createClass({
   }
 });
 
-  // Export the component back for use in other files
+// Export the component back for use in other files
 module.exports = Main;

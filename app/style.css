@@ -1,0 +1,177 @@
+.form-wrap .btn-custom: hover,
+
+#center-me {
+    text-align: center;
+}
+
+#main {
+    overflow: auto;
+    /*padding-bottom:50px;  this needs to be bigger than footer height*/
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-bottom: 150px;
+    border-color: #3b5998;
+    border-width: 5px;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 68px;
+
+    background-color: rgba(128, 128, 128, 0.08);
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+}
+
+nav {
+     padding-right: 30px
+}
+
+#myNavbar {
+    color: #008000;
+    font-family: HarmoniaSansProCyr-SemiBd;
+}
+
+
+#login {
+    padding-top: 75px;
+    padding-left: 400px;
+}
+
+#login .form-wrap {
+    width: 30%;
+}
+
+#login h1 {
+    padding-bottom: 20px;
+
+    font-size: 18px;
+    color: ##333;
+    text-align: center;
+}
+
+#login .form-group {
+    margin-bottom: 25px;
+}
+
+#login .checkbox {
+    position: relative;
+
+    margin-bottom: 20px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#login .checkbox.show:before {
+    content: '\e013';
+
+    position: absolute;
+
+    margin: 1px 0 0 3px;
+
+    font-size: 17px;
+    color: #1fa67b;
+
+    pointer-events: none;
+}
+
+#login .checkbox .character-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+
+    height: 25px;
+    width: 25px;
+
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#login .checkbox .label {
+    font-size: 13px;
+    font-weight: normal;
+    color: #6d6d6d;
+}
+
+#login .btn.btn-custom {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#login .forget {
+    display: block;
+
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/*    --------------------------------------------------
+    :: Section IDs
+    -------------------------------------------------- */
+
+#title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    line-height: 43.2px;
+    color: #008000;
+    font-family: HarmoniaSansProCyr-SemiBd;
+    font-weight: 600;
+}
+
+
+
+/*    --------------------------------------------------
+    :: Inputs & Buttons
+    -------------------------------------------------- */
+
+.form-control {
+    color: #212121;
+}
+
+.btn-custom {
+    background-color: #3b5998;
+    color: white;
+}
+
+.btn-custom:focus {
+    color: #fff;
+}
+
+
+
+
+/*    --------------------------------------------------
+    :: Footer
+    -------------------------------------------------- */
+
+#footer {
+    font-size: 12px;
+    color: #6d6d6d;
+    text-align: center;
+}
+
+#footer p {
+    margin-bottom: 0;
+}
+
+#footer a {
+    color: inherit;
+}
+
+/* == */
