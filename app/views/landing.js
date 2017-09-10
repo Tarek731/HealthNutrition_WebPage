@@ -1,6 +1,6 @@
 // Include React
-var React = require('react');
-var ReactDOM = require('react-dom');
+var React = require("react");
+var ReactDOM = require("react-dom");
 
 // Create the Header component
 // Notice how the header uses React.createClass
@@ -10,7 +10,7 @@ const Landing = React.createClass({
   render: function () {
     return (
       <div>
-        <nav className='navbar navbar-inverse'</nav>
+        <nav className='navbar navbar-inverse'/>
           <div className="container-fluid" >
             <a className='navbar-brand' href='#'>Title</a>
             <ul className='nav navbar-nav' />
