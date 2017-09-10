@@ -9,7 +9,7 @@ var Dashboard = React.createClass({
     return (
 		<div className="container">
 			<h1>Dashboard Page</h1>
-   			<h2>FatSecret 3 !</h2>
+   			<h1> </h1>
    			<div id="my_container" className="fatsecret_container"></div>
       </div>   
     );
