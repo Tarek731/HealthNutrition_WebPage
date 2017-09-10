@@ -21,7 +21,8 @@ var IndexRoute = router.IndexRoute;
 var Main = require("../components/Main");
 var Login = require("../components/children/Login");
 var Signup = require("../components/children/Signup");
-var Landing = require("../views/Landing")
+var Landing = require("../views/Landing");
+var Dashboard = require("../views/Dashboard");
 // Export the Routes
 module.exports = (
 // The high level component is the Router component
@@ -35,7 +36,7 @@ module.exports = (
       <Route path="signup" component={Signup} />
       <Route path="landing" component={Landing} />
       
-      
+      <Route path="dashboard" component={Dashboard} />
 
       {/* If user selects any other path... we get the Home Route */}
       <IndexRoute component={Landing} />

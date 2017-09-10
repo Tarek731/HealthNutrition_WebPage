@@ -18,6 +18,11 @@ var Main = React.createClass({
                     <ul className="nav navbar-nav navbar-left">
                      <li><Link to="/landing"><span className="glyphicon glyphicon-cloud"></span> Home</Link></li>
 
+
+
+                    <li><Link to="/dashboard"><span className="glyphicon glyphicon-dashboard"></span> Dashboard</Link></li>
+
+
                     </ul>
                     <ul className="nav navbar-nav navbar-right">
                         <li><a href="https://github.com/Tarek731/Project_2"> About Us</a></li>
