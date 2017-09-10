@@ -1,0 +1,113 @@
+﻿.method {
+	color:#202020;
+	font-weight:300;
+	width:100%;
+	word-break:break-word;
+}
+.method h1 {
+	font-size:20px;
+	font-weight:500;
+	margin:0px;
+    margin-bottom:20px;
+}
+.method h2 {
+	font-size:16px;
+	font-weight:500;
+}
+.method a {
+	font-weight:500;
+}
+/* Common */
+.method .methodParameterContent, .method .responseBox, .method .responseJsonBox, .method .errorCodeTable {
+	width:95%;
+	margin:0 auto;
+}
+.method .parameterTable td, .method .errorCodeTable td {
+	padding:0px 10px;
+}
+.method .headerRow {
+	font-weight:bold;
+	background-color:#DCDCDC;	
+}
+.method .headerRow td {
+	border-bottom:1px solid black;
+}
+/* Description */
+.method .descriptionBox {
+	margin-bottom:20px;
+}
+/* Parameters */
+.method .parameterTable {
+	width:100%;
+}
+.method .parameterTable tr {
+	line-height:25px;
+	vertical-align:top;
+}
+.method .parameterTable .requiredRow {
+	background-color:#E7FFC9;
+}
+.method .parameterTable .optionalRow {
+	background-color:#FFE3B1;
+}
+/* Response */
+.method .responseBox {
+	line-height:25px;
+}
+.method .responseBox .xml_row {
+	padding-left:10px;
+	background-color:#DCDCDC;
+}
+.method .responseBox .xml_alternatingRow {
+	padding-left:10px;
+	background-color:#CDCDCD;
+}
+.method .responseBox .xml_openCloseTag {
+	color:#039;
+}
+.method .responseBox .xml_tagName {
+	color:#930;
+}
+.method .responseBox .xml_tagValue {
+	color:#000;
+}
+.method .responseBox .xml_attName {
+	color:#e00;
+}
+.method .responseBox .xml_attEqual {
+	color:#000;
+}
+.method .responseBox .xml_attValue {
+	color:#00e;
+}
+.method .responseJsonBox {
+	line-height:25px;
+	background-color:#E2EFFF;
+}
+.method .responseJsonBoxContent {
+	padding:10px;
+}
+/* ErrorCode */
+.method .errorCodeTable tr {
+	line-height:25px;
+	vertical-align:top;
+}
+.method .errorCodeTable .errorRow {
+	background-color:#FFCDCC;
+}
+@media (max-width:991px) { /* below desktop */
+    .method .headerRow {
+        white-space:nowrap;
+    }
+    .method .parameterTable .parameterName {
+        width:30%;
+    }
+}
+@media (min-width:992px) { /* desktop */
+    .method .parameterTable .parameterName, .method .errorCodeTable .errorCode {
+        width:180px;
+    }
+    .method .parameterTable .parameterType {
+        width:180px;
+    }
+}
