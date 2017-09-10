@@ -1,7 +1,12 @@
 import {hashHistory} from 'react-router';
 // Include React
+
 var React = require("react");
 var Login = require("./Login")
+
+
+
+
 // Create the Header component
 // Notice how the header uses React.createClass
 // Notice how it uses a render function which specifies what will be displayed by the component
@@ -9,6 +14,7 @@ var Login = require("./Login")
 var helpers = require("../../utils/helpers");
 
 var Login = React.createClass({
+
  //Init component
   getInitialState: function() {
     return { 
@@ -99,11 +105,17 @@ console.log('*'+user+'*')
                                 <hr/>
                             </div>
                         </div> 
-                    </div>
-                </div>
-             </section>
-    	
-        </div>
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+          </div>
+        
+
     );
   }
 });
