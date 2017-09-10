@@ -37,7 +37,7 @@ var Profile = React.createClass({
 
 
     return (
-
+<div>
 <section className="clearfix bg-dark profileSection homeBanner">
   <div className="container">
     <div className="row">
@@ -93,7 +93,7 @@ var Profile = React.createClass({
     </div>
   </div>
 </section>
-
+</div>
     );
   }
 });

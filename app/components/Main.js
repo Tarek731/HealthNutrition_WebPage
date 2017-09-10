@@ -29,6 +29,8 @@ var Main = React.createClass({
               {this.props.children}
 
            </div>
+        
+
            </div>
 
     );
