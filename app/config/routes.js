@@ -23,6 +23,8 @@ var Login = require("../components/children/Login");
 var Signup = require("../components/children/Signup");
 var Landing = require("../views/Landing")
 var Register = require("../components/children/Register");
+var Dashboard = require("../views/Dashboard");
+
 // Export the Routes
 module.exports = (
 // The high level component is the Router component
@@ -32,13 +34,15 @@ module.exports = (
 
       {/* If user selects Child1 then show the appropriate component*/}
       <Route path="login" component={Login} />
-        <Route path="profile/:user" component={Profile} />
+      <Route path="profile/:user" component={Profile} />
 
       <Route path="signup" component={Signup} />
       <Route path="landing" component={Landing} />
       
       <Route path="profile" component={Profile} />
-        <Route path="register" component={Register} />
+      <Route path="register" component={Register} />
+
+      <Route path="dashboard" component={Dashboard} />
 
       {/* If user selects any other path... we get the Home Route */}
       <IndexRoute component={Landing} />
