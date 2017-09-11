@@ -9,19 +9,9 @@ var ReactDOM = require("react-dom");
 const Landing = React.createClass({
   render: function () {
     return (
-      <div>
-        <nav className='navbar navbar-inverse'/>
-          <div className="container-fluid" >
-            <a className='navbar-brand' href='#'>Title</a>
-            <ul className='nav navbar-nav' />
-            <li className='active'>
-              <a href='#'>Home</a>
-            </li>
-            <li>
-              <a href='#'>Link</a>
-            </li>
-          </div>
-      </div>
+       <div className="container" >
+        <h1> Landing Page Placeholder</h1>
+       </div>
     );
   }
 });

@@ -56,12 +56,13 @@ console.log('*'+user+'*')
           console.log("cookie " + x)
           hashHistory.push('/profile/'+ user)
           // window.location.href = "/#/profile";
+          window.location.href = "/dashboard";
         } else {
           // show error and stay on apge
           alert("failed to authenticate");
         }
     }).catch(function(err) {
-     console.log("inside handleLogin Catch()", JSON.stringify(err, null, 2));
+     gitconsole.log("inside handleLogin Catch()", JSON.stringify(err, null, 2));
 
       if(err.response.status == 401) {
         alert("That Username and Password is not valid. Please sign-up on the Sign Up link");
