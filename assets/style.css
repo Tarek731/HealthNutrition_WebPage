@@ -14,14 +14,29 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 }
 
 #soloMid {
-          padding-left: 300px;
+          padding-left: 240px;
 }
-
 
 body {
   background-color: #F5F5F5;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
+  text-align: center;
+ }
+
+h1, h2 {
+  
+  font-size: 50px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#page-wrap {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
 }
 
 .skrollr-desktop body {
@@ -234,7 +249,7 @@ body {
   }
 
   .features-list div h4 {
-    font-family: 'Open Sans', sans-serif;
+   
     font-size: 25px;
     font-weight: normal;
     color: #425f67;
@@ -313,7 +328,7 @@ body {
     overflow: hidden;
     min-height: 300vh;
 
-    background: linear-gradient(#F5F5F5, #eef6f9);
+    background: linear-gradient(#F5F5F5, #000000);
     font: 'Open sans' 24px sans-serif;
     color: #221f51;
     text-align: center;
