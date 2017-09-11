@@ -7,6 +7,7 @@ var LocalStrategy = require('passport-local').Strategy;
 //Register user
 router.post('/sign-up', function(req, res){
   console.log("---------------------");
+  console.log("routes user.js /sign-up post started");
   console.log(req.body);
 	// var firstname = req.body.firstname;
 	var email = req.body.email;
@@ -28,6 +29,7 @@ router.post('/sign-up', function(req, res){
 		console.log('Failed to validate');
 	}
 	else{
+    console.log("validated fields...")
 		var newUser = new User({
 			// firstname: firstname,
 			// lastname: lastname,
@@ -35,10 +37,13 @@ router.post('/sign-up', function(req, res){
 			username: username,
 			password: password
 		});
-
+    console.log("User.createUser starting...")
 		User.createUser(newUser, function(err, user){
+      console.log("User.createUser complete,  callback function started...");
 			if(err) throw err;
 			console.log(" user route " + user);
+      console.log("User.createUser complete,  callback function finished...");
+      res.send("Done");
 		});
 
 		//Set success message

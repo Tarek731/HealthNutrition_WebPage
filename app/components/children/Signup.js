@@ -46,22 +46,23 @@ var Signup = React.createClass({
       email: this.state.email
 
     }).then(function(response){
+      console.log("handleSignup - helper.registerUser.then() started")
     	console.log(response);
 
-  //     var user = JSON.parse(response.config.data).username
-  //       console.log("RESULTS", response.data.authenticated);
-  //       var isAuthenticated = response.data.authenticated;
-		// console.log('*'+user+'*')
-  //       if(isAuthenticated){
-  //         document.cookie = "user="+user;
-  //         var x = document.cookie
-  //         console.log("cookie " + x)
-  //         hashHistory.push('/profile/'+ user)
-  //         // window.location.href = "/#/profile";
-  //       } else {
-  //         // show error and stay on apge
-  //         alert("failed to authenticate");
-  //       }
+      var user = JSON.parse(response.config.data).username
+        console.log("RESULTS", response.data.authenticated);
+        var isAuthenticated = response.data.authenticated;
+		console.log('*'+user+'*')
+        if(isAuthenticated){
+          document.cookie = "user="+user;
+          var x = document.cookie
+          console.log("cookie " + x)
+          hashHistory.push('/profile/'+ user)
+          // window.location.href = "/#/profile";
+        } else {
+          // show error and stay on apge
+          alert("failed to authenticate");
+        }
     })
     
   },

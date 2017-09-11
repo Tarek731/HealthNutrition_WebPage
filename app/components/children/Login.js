@@ -60,6 +60,13 @@ console.log('*'+user+'*')
           // show error and stay on apge
           alert("failed to authenticate");
         }
+    }).catch(function(err) {
+     console.log("inside handleLogin Catch()", JSON.stringify(err, null, 2));
+
+      if(err.response.status == 401) {
+        alert("That Username and Password is not valid. Please sign-up on the Sign Up link");
+      }
+
     })
     event.preventDefault();
   },
@@ -80,7 +87,7 @@ console.log('*'+user+'*')
                         <div className="col-xs-12">
                             <div className="form-wrap">
                                 <h1> Log-In</h1>
-                                <form orm onSubmit = {this.handleLogin} className="loginForm">
+                                <form onSubmit = {this.handleLogin} className="loginForm">
                                     <div className="form-group">
                                         <label for="username">Username</label>
                                         <input 

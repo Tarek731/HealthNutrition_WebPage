@@ -57,11 +57,11 @@ app.use(expressValidator({
 
 
 // MongoDB Configuration configuration (Change this URL to your own DB)
-if (process.env.MONGODB_URI) {
-  mongoose.connect(process.env.MONGODB_URI)
-} else {
-  mongoose.connect('mongodb://trekitout:trekitout@ds129422.mlab.com:29422/heroku_b2rft21n');
-}
+// if (process.env.MONGODB_URI) {
+//   mongoose.connect(process.env.MONGODB_URI)
+// } else {
+//   mongoose.connect('mongodb://trekitout:trekitout@ds129422.mlab.com:29422/heroku_b2rft21n');
+// }
 
 
 mongoose.connect("mongodb://localhost/Health");
