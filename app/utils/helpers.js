@@ -4,7 +4,10 @@ var axios = require("axios");
 // Exporting an object with methods for retrieving and posting data to our API
 module.exports = {
   registerUser: function(userData) {
-    return axios.post("/users/register", userData);
+    return axios.post("/users/sign-up", userData).then(function(results) {
+       console.log("axios results for user sign up", results);
+       return results;
+     });
   },
 
   loginUser: function(userData){
@@ -13,8 +16,7 @@ module.exports = {
 
   getUser: function(searchParams){
   	return axios.get("/users/profile/"+ searchParams.username);
-  },
-  
+  }
   
   
 

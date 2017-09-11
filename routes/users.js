@@ -5,17 +5,18 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
 //Register user
-router.post('/register', function(req, res){
-
-	var firstname = req.body.firstname;
+router.post('/sign-up', function(req, res){
+  console.log("---------------------");
+  console.log(req.body);
+	// var firstname = req.body.firstname;
 	var email = req.body.email;
-	var lastname = req.body.lastname;
+	// var lastname = req.body.lastname;
 	var password = req.body.password;
 	var username = req.body.username;
 
 	// Valdiation
-	req.checkBody('firstname', 'Name is required').notEmpty();
-	req.checkBody('lastname', 'Name is required').notEmpty();
+	// req.checkBody('firstname', 'Name is required').notEmpty();
+	// req.checkBody('lastname', 'Name is required').notEmpty();
 	req.checkBody('email', 'Email is required').notEmpty();
 	req.checkBody('email', 'Email is not valid format').isEmail();
 	req.checkBody('username', 'Username is required').notEmpty();
@@ -28,8 +29,8 @@ router.post('/register', function(req, res){
 	}
 	else{
 		var newUser = new User({
-			firstname: firstname,
-			lastname: lastname,
+			// firstname: firstname,
+			// lastname: lastname,
 			email: email,
 			username: username,
 			password: password

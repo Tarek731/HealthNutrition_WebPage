@@ -40,7 +40,7 @@ var Login = React.createClass({
     console.log("logging in")
     var username = this.state.username
     console.log(username + ' is the username inside login')
-    //console.log('the total data is :' + this.state.firstname, this.state.lastname, this.state.email, this.state.password);
+    console.log('the total data is :' + this.state.firstname, this.state.lastname, this.state.email, this.state.password);
     helpers.loginUser({ 
       username: username,
       password: this.state.password 
@@ -97,7 +97,7 @@ console.log('*'+user+'*')
                                         <span className="label">Show password</span>
                                     </div>
                                     <div className="form-group">
-                                    <input type="submit" id="btn-login" className="btn btn-custom btn-lg btn-block" value="Log in"/>
+                                    <input type="submit" id="btn-login" className="btn btn-custom btn-lg btn-block" value="Login"/>
                                     </div>
                                 </form>
                                 

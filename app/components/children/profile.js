@@ -58,7 +58,7 @@ var Profile = React.createClass({
         <form>
           <div className="dashboardBoxBg">
             <div className="profileIntro">
-              <h2>Your Profile: {this.props.params.user}</h2>
+             {this.props.params.user}
 {/*<!--               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form Ipsum available.</p> -->*/}
             </div>
           </div>

@@ -8,16 +8,16 @@ var Schema = mongoose.Schema;
 var UserSchema = new Schema ({
     firstname: {
         type: String,
-        required: true
+        required: false
     },
     lastname: {
         type: String,
-        required: true
+        required: false
     },
     username: {
         type: String,
-        required: true,
-        unique: true,
+        required: false,
+        unique: false,
         validate: [
           // Function takes in the value as an argument
         function(input) {
