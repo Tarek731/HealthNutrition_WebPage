@@ -3,3 +3,4 @@ node_modules/
 .DS_Store
 HealthNutrition.sublime-project
 HealthNutrition.sublime-workspace
+package-lock.json
