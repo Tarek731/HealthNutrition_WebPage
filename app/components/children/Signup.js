@@ -13,7 +13,7 @@ var Signup = React.createClass({
 			            <div className="col-xs-12">
 			                <div className="form-wrap">
 			                <h1>Create An Account</h1>
-			                    <form role="form" action="/sign-up" method="post" id="login-form" autoComplete="off">
+			                    <form role="form" action="/sign-up" method="post" id="login-form" autocomplete="off">
 			                        <div className="form-group">
 			                            <label for="email" className="sr-only">Email</label>
 			                            <input type="email" name="email" id="email" className="form-control" placeholder="Your email address"/>

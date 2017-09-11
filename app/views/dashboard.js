@@ -5,11 +5,9 @@ const Dashboard = React.createClass({
 	render: function() {
 		return (
 			<div className="container">
-				var sectionStyle = {
-				  width: "100%",
-				  height: "400px",
-				  backgroundImage: "url(${Background})"
-				};
+				<div className="col-md-3"> 
+
+				</div>
 			</div>
 			)
 	}
@@ -17,3 +15,7 @@ const Dashboard = React.createClass({
 
 //Export the component back into the other files
 module.exports = Dashboard;
+
+//food search bar
+//food diary
+//food recipes
