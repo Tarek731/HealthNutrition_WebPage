@@ -1,46 +1,41 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import React, { Component } from 'react';
-
-const ReactDOM = require('react-dom');
-const Link = require('react-router').Link;
-
-// Reactstrap
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Container,
-  Row,
-  Col,
-  Jumbotron,
-  Button
-  } from 'reactstrap';
-
 // Include React
-const ReactDOM = require('react-dom');
-const Link = require('react-router').Link;
-const Main = React.createClass({
-// Here we render the function
-  render: function () {
+var React = require("react");
+// Including the Link component from React Router to navigate within our application without full page reloads
+var Link = require("react-router").Link;
+
+var Main = React.createClass({
+
+  // Here we render the function
+  render: function() {
+
     return (
       <div>
-        <div className='Navbar'>
-          <h2><a href='#'>Website Logo </a></h2>
-          <div className='nav'>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>Products</a></li>
-          </div>
-        </div>
-      </div>
-        <div className='row'>
-          {this.props.children}
-        </div>
+        <nav className="navbar navbar-default">
+          <div className="container-fluid">
+            <div className="navbar-header">
+            </div>
+              <div className="collapse navbar-collapse" id="myNavbar"> 
+                    <ul className="nav navbar-nav navbar-left">
+                     <li><Link to="/landing"><span className="glyphicon glyphicon-cloud"></span> Home</Link></li>
+
+                    </ul>
+                    <ul className="nav navbar-nav navbar-right">
+                        <li><a href="https://github.com/Tarek731/Project_2"> About Us</a></li>
+                        <li><Link to="/signup"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
+                        <li><Link to="/login"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
+                    </ul>
+              </div>
+          </div>      
+        </nav>      
+          
+            <div className="row">
+              {this.props.children}
+            </div>
+      </div>   
+      
     );
   }
 });
+
 // Export the component back for use in other files
 module.exports = Main;

@@ -1,0 +1,505 @@
+/*  Page styles  */
+
+
+/* {
+    box-sizing: border-box;
+     
+    margin: 0;
+    padding: 0;
+}
+*/
+
+body {
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+.skrollr-desktop body {
+  height: 100% !important;
+}
+
+#skrollr-body {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+
+
+
+
+/*  Styles for this example */
+
+.parallax-image.skrollable-between {
+  display: block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+  display: none !important;
+}
+
+.parallax-image-wrapper {
+  position: fixed;
+  top: -80vh;
+  left: 0;
+
+  overflow: hidden;
+  height: 80vh;
+  width: 100%;
+}
+
+
+/* ==========================================================================
+   TOP IMAGE
+   ========================================================================== */
+
+   .parallax-image {
+    position: absolute;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+  .parallax-image.skrollable-between {
+    display: block;
+  }
+
+  .no-skrollr .parallax-image-wrapper {
+    display: none !important;
+  }
+
+
+
+
+
+  /* •••••••••••••••••••• GAP SPACE for images •••••••••••••••••••••• */
+
+  .gap {
+    height: 50vh;
+
+    background: transparent center no-repeat;
+    background-size: cover;
+  }
+
+  .skrollr .gap {
+    background: transparent !important;
+  }
+
+
+
+
+
+  /*  End of scrollr styles  */
+
+
+  /* •••••••••••••••••••• INTRO header •••••••••••••••••••••• */
+
+  #page-intro h1 {
+    padding-top: 20vh;
+
+    color: #fff;
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    #page-intro h1 {
+      padding-top: 15vh;
+      font-size: 30px;
+    }
+  }
+
+  #page-intro .btn {
+    display: block;
+
+    width: 200px;
+    margin: 40px auto;
+    padding: 18px 20px;
+
+    font-weight: bold;
+    color: #fff !important;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 4px;
+  }
+
+
+
+
+
+  /* •••••••••••••••••••• ABOUT ME body •••••••••••••••••••••• */
+
+  .body-text {
+    padding: 20px;
+
+    background-color: #F5F5F5;
+    font-size: 15px;
+
+    color: #a9a9a93c;
+    text-align: center;
+  }
+
+
+
+
+
+
+  /* •••••••••••••••••••• ABOUT ME title •••••••••••••••••••••• */
+
+  .body-text h2 {
+    padding-top: 130px;
+    margin-top: 100px;
+
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .body-text p {
+    margin-top: 50px;
+    display: inline-block;
+    width: 75%;
+    padding: 30px;
+
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+  }
+
+  @media (max-width: 900px) {
+    .body-text p {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+/* ==========================================================================
+   PROJECTS
+   ========================================================================== */
+
+   .features-list {
+    min-height: 100vh;
+    padding: 150px 0;
+    background-color: #F5F5F5;
+    font-size: 18px;
+
+    text-align: center;
+  }
+
+  .features-list h2 {
+    margin-bottom: 80px;
+
+    font-size: 40px;
+    font-weight: regular;
+  }
+
+  .features-list div {
+    display: inline-block;
+
+    width: 20%;
+    margin: 5px;
+    padding: 45px;
+
+    border: 1px solid #ccc;
+    box-shadow: 5px, 10px, 15px, 20px, #000000;
+  }
+
+  .features-list div i {
+    margin-bottom: 40px;
+
+    font-size: 80px;
+    color: #50b575;
+  }
+
+  .features-list div h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #425f67;
+  }
+
+  @media (max-width: 900px) {
+    .features-list div {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+  }
+
+
+
+
+
+  /*TECHNOLOGIES*/
+
+  .about-us {
+    min-height: 120vh;
+    padding: 150px 0;
+
+    background-color: #fff;
+    font-size: 18px;
+    color: #25373c;
+    text-align: center;
+  }
+
+  .about-us h2 {
+    margin-bottom: 80px;
+
+    font-size: 42px;
+    font-weight: normal;
+  }
+
+  .about-us div {
+    display: inline-block;
+
+    width: 25%;
+    margin: 30px 10px;
+
+    text-align: center;
+  }
+
+  .about-us div img {
+    width: 60%;
+    border-radius: 50%;
+  }
+
+  .about-us a.attribution {
+    display: block;
+
+    width: 280px;
+    margin: 50px auto 10px;
+
+    opacity: 0.5;
+    font-size: 13px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media (max-width: 800px) {
+    .about-us div {
+      width: 45%;
+      margin: 20px 0;
+    }
+  }
+
+
+
+
+
+  /*Technologies*/
+
+  .gallery {
+    overflow: hidden;
+    min-height: 300vh;
+
+    background: linear-gradient(#F5F5F5, #eef6f9);
+    font: 'Open sans' 24px sans-serif;
+    color: #221f51;
+    text-align: center;
+  }
+
+  .scroll-pause {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+    padding-top: 20vh;
+
+    background: transparent;
+  }
+
+  .scroll-pause .row {
+    overflow: hidden;
+    height: 30vh;
+    width: 200vw;
+  }
+
+  .scroll-pause .row div {
+    float: left;
+
+    height: 90%;
+    width: 11.5%;
+    margin: 0.5%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .scroll-pause .row div:first-child {
+    margin-left: 0.4%;
+  }
+
+  .scroll-pause .row div:last-child {
+    margin-right: 0.4%;
+  }
+
+
+
+
+
+  /*Footer*/
+
+  footer {
+    box-sizing: border-box;
+
+    overflow: hidden;
+    width: 100%;
+    padding: 50px 60px 55px;
+
+    background-color: rgb(255, 255, 255);
+    font: bold 16px sans-serif;
+    text-align: left;
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.04);
+  }
+
+
+
+
+
+  /* Footer left */
+
+  footer .footer-left {
+    float: left;
+  }
+
+  footer h3 {
+    margin: 0;
+
+    font: normal 36px 'Cookie', cursive;
+    color: #5383d3;
+  }
+
+  footer .footer-links {
+    margin: 22px 0 14px;
+    padding: 0;
+
+    color: #95a4a9;
+  }
+
+  footer .footer-links a {
+    display: inline-block;
+
+    color: #50b575;
+    text-decoration: none;
+  }
+
+  footer .footer-company-name {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: normal;
+    color: #8f9296;
+  }
+
+
+
+
+
+  /* Footer right */
+
+  footer .footer-right {
+    float: right;
+    width: 100%;
+  }
+
+
+
+
+
+  /* The search form */
+
+  footer form {
+    position: relative;
+  }
+
+  footer form input {
+    display: block;
+    box-sizing: border-box;
+
+    width: 100%;
+    padding: 18px 50px 18px 18px;
+
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color: #32383a;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #eee;
+    outline: none;
+  }
+
+  footer form input:focus {
+    border-color: #ccc;
+  }
+
+
+
+
+
+  /* Changing the placeholder color */
+
+  footer form input::-webkit-input-placeholder {
+    color: #5c666b;
+  }
+
+  footer form input::-moz-placeholder {
+    opacity: 1;
+    color: #5c666b;
+  }
+
+  footer form input:-ms-input-placeholder {
+    color: #5c666b;
+  }
+
+
+
+
+
+  /* The magnify glass icon */
+
+  footer form i {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+
+    height: 20px;
+    width: 20px;
+
+    font-size: 20px;
+    color: #d1d2d2;
+  }
+
+
+
+
+
+  /* If you don't want the footer to be responsive, remove these media queries */
+
+  @media (max-width: 1100px) {
+    footer .footer-left {
+      margin-bottom: 50px;
+    }
+    footer .footer-right {
+      float: left;
+      clear: left;
+    }
+  }
