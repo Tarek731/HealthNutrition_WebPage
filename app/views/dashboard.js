@@ -9,16 +9,16 @@ var Dashboard = React.createClass({
 	  
 	    fatsecret.setContainer("my_container");
 		fatsecret.setCanvas("home");
-  },
-  render: function() {
-    return (
-		<div className="container">
-			<h1>Dashboard Page</h1>
-   			<h1> </h1>
-   			<div id="my_container" className="fatsecret_container"></div>
-      </div>   
-    );
-  }
+ 	},
+	render: function() {
+		return (
+			<div className="container">
+				<h1>Dashboard Page</h1>
+				<h1> </h1>
+				<div id="my_container" className="fatsecret_container"></div>
+			</div>   
+		);
+	}
 });
 
 // Export the component back for use in other files
