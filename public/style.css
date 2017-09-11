@@ -1,3 +1,14 @@
+body {
+    background: url("./images/fruits.jpg");
+}
+
+.container-fluid {
+    background-color: ;
+}
+
+.nav.navbar.navbar-default {
+    opacity: 0.8;
+}
 
 #wrap {
   min-height: 50px;
@@ -12,7 +23,11 @@ li{
     font-family: 'Montserrat', sans-serif;
 }
 
-h3 {
+h1 {
+    text-align: center;
+}
+
+h3 { 
   text-align:left;
  background-color:rgba(128, 128, 128, 0.08);
 border-style: solid;
