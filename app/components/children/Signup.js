@@ -4,6 +4,7 @@ var Link = require("react-router").Link;
 var helpers = require("../../utils/helpers");
 
 
+
 var Signup = React.createClass({
  	//Init component
   getInitialState: function() {
@@ -38,7 +39,10 @@ var Signup = React.createClass({
   	event.preventDefault();
     console.log("sign up button clicked")
 
-    var pw = this.state.password
+    // var un = this.state.userName;
+    var pw = this.state.password;
+
+  //  var un = this.state.username;
   //   var username = this.state.username
   //   console.log(username + ' is the username inside login')
   //   console.log('the total data is :' + this.state.firstname, this.state.lastname, this.state.email, this.state.password);
@@ -49,6 +53,9 @@ var Signup = React.createClass({
 
     }).then(function(response){
       console.log("handleSignup - helper.registerUser.then() started")
+
+
+
     	console.log(" this is the response with the user!!!!!!!" , response.data.username, response.data.password);
       console.log("these are the passwords" , pw)
       var username = response.data.username;
@@ -71,6 +78,7 @@ console.log('*'+user+'*')
           // hashHistory.push('/profile/'+ user)
           // window.location.href = "/#/profile";
           window.location.href = "/dashboard";
+          // console.log("Success", "window.location.href = /dashboard;")
         } else {
           // show error and stay on apge
           alert("failed to authenticate");

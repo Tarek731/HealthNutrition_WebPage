@@ -47,16 +47,20 @@ var Login = React.createClass({
     }).then(function(response, username){
 
       var user = JSON.parse(response.config.data).username
-        console.log("RESULTS", response.data.authenticated);
+        console.log("RESPONSE", response.config.data);
+        console.log("RESULTS", response.data);
         var isAuthenticated = response.data.authenticated;
 console.log('*'+user+'*')
         if(isAuthenticated){
           document.cookie = "user="+user;
+          console.log("cookie - fatsecret_session_key="+response.data.sessionKey + "; path=/");
+          document.cookie = "fatsecret_session_key="+response.data.sessionKey + "; path=/";
           var x = document.cookie
           console.log("cookie " + x)
           hashHistory.push('/profile/'+ user)
           // window.location.href = "/#/profile";
-          window.location.href = "/dashboard";
+        //  window.location.href = "/dashboard";
+        console.log("Success"); 
         } else {
           // show error and stay on apge
           alert("failed to authenticate");
