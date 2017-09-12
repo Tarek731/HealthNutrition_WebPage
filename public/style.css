@@ -1265,6 +1265,10 @@ a.pure-button-primary {
 .footer {
     background: #111;
 }
+/* this class is used to reset line-height for fatsecret buttons created by the 3rd party script*/
+input.fatsecret_button {
+    line-height: 1em;
+}
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
@@ -1318,6 +1322,7 @@ a.pure-button-primary {
 
 
 }
+
 
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
