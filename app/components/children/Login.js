@@ -52,6 +52,7 @@ var Login = React.createClass({
 console.log('*'+user+'*')
         if(isAuthenticated){
           document.cookie = "user="+user;
+          document.cookie = "fatsecret_session_key="+response.data.sessionKey + "; path=/";
           var x = document.cookie
           console.log("cookie " + x)
           hashHistory.push('/profile/'+ user)

@@ -67,6 +67,7 @@ console.log('*'+user+'*')
         if(isAuthenticated){
           document.cookie = "user="+user;
           var x = document.cookie
+          document.cookie = "fatsecret_session_key="+response.data.sessionKey + "; path=/";
           console.log("cookie " + x)
           // hashHistory.push('/profile/'+ user)
           // window.location.href = "/#/profile";

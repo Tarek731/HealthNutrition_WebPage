@@ -50,6 +50,14 @@ var UserSchema = new Schema ({
     interests: {    
         type: Array
     },
+    oauthToken: {
+        type: String,
+        required: false
+    },
+    oauthSecret: {
+        type: String,
+        required: false
+    }
 })
 
 var User = mongoose.model("User", UserSchema);
