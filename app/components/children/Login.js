@@ -3,6 +3,7 @@ import {hashHistory} from 'react-router';
 
 var React = require("react");
 var Login = require("./Login");
+var Link = require("react-router").Link;
 
 
 
@@ -83,7 +84,26 @@ console.log('*'+user+'*')
 
     return (
       <div className="display">
-			<section id="login">
+			<nav className='navbar navbar-default'>
+                      <div className='container-fluid'>
+                          <div className='navbar-header' />
+                            <div className='collapse navbar-collapse' id='myNavbar'>
+                              <ul className='nav navbar-nav navbar-left'>
+                                <li><Link to="/landing"><span className='glyphicon glyphicon-cloud'/>Home</Link></li>  
+                              </ul>
+                                 <ul className="nav navbar-nav navbar-right"> 
+                                      <li><Link to="/signup"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
+
+                                 </ul>
+                            </div>
+                          </div>      
+                    
+                </nav> 
+
+
+
+
+      <section id="login">
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-12">

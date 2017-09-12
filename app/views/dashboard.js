@@ -13,14 +13,31 @@ var Dashboard = React.createClass({
 	render: function() {
 		return (
 
-		
+		<div>
+
+			<nav className='navbar navbar-default'>
+		        <div className='container-fluid'>
+		            <div className='navbar-header' />
+		              <div className='collapse navbar-collapse' id='myNavbar'>
+		                <ul className='nav navbar-nav navbar-left'>
+		                  <li><Link to="/landing"><span className='glyphicon glyphicon-cloud'/>Home</Link></li>  
+		                   <li><Link to="/dashboard"><span className="glyphicon glyphicon-dashboard"></span> Dashboard</Link></li>
+		                </ul>
+		                   <ul className="nav navbar-nav navbar-right"> 
+		                        <li><Link to="/profile">My Profile</Link></li>
+
+		                   </ul>
+		              </div>
+		            </div>      
+		      
+		    </nav> 
 			<div className="container panel panel-default" id="dashpanel">
 			<h1>Dashboard Page</h1>
 				
 			<div id="my_container" className="fatsecret_container"></div>
 
 			</div>   
-		 	
+		 	</div>
 		
 		);
 	}

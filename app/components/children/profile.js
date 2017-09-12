@@ -1,6 +1,7 @@
 // Include React
 var React = require("react");
 var helpers = require("../../utils/helpers");
+var Link = require("react-router").Link;
 
 var Profile = React.createClass({
    getInitialState: function() {
@@ -38,6 +39,24 @@ var Profile = React.createClass({
 
     return (
 <div>
+ <nav className='navbar navbar-default'>
+        <div className='container-fluid'>
+            <div className='navbar-header' />
+              <div className='collapse navbar-collapse' id='myNavbar'>
+                <ul className='nav navbar-nav navbar-left'>
+                  <li><Link to="/landing"><span className='glyphicon glyphicon-cloud'/>Home</Link></li>  
+                   <li><Link to="/dashboard"><span className="glyphicon glyphicon-dashboard"></span> Dashboard</Link></li>
+                </ul>
+                   <ul className="nav navbar-nav navbar-right"> 
+                        <li><Link to="/profile">My Profile</Link></li>
+
+                   </ul>
+              </div>
+            </div>      
+      
+    </nav> 
+
+
 <section className="clearfix bg-dark profileSection homeBanner">
   <div className="container">
     <div className="row">
