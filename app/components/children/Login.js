@@ -62,7 +62,8 @@ console.log('*'+user+'*')
           alert("failed to authenticate");
         }
     }).catch(function(err) {
-     gitconsole.log("inside handleLogin Catch()", JSON.stringify(err, null, 2));
+     console.log("inside handleLogin Catch()", JSON.stringify(err, null, 2));
+     console.log(err);
 
       if(err.response.status == 401) {
         alert("That Username and Password is not valid. Please sign-up on the Sign Up link");
