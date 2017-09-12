@@ -44,7 +44,7 @@ var Profile = React.createClass({
       <div className="col-md-4 col-sm-5 col-xs-12">
         <div className="dashboardBoxBg mb30">
           <div className="profileImage">
-            <img src="img/dashboard/user-2.jpg" alt="Image User" className="img-circle"></img>
+            <img src="img/dashboard/user-2.jpg"  className="img-circle"></img>
             <div className="file-upload profileImageUpload">
               <div className="upload-area">
                 <input type="file" name="img[]" className="file"></input>

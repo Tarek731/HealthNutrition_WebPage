@@ -1,7 +1,7 @@
 // Include React
 var React = require("react");
 var ReactDOM = require("react-dom");
-
+var Link = require("react-router").Link;
 
 // Create the Header component
 // Notice how the header uses React.createClass
@@ -11,10 +11,74 @@ var Landing = React.createClass({
   render: function () {
     return (
    <div>
- 
+<div className="header">
+    
+</div>
+  
+  
+
+<div className="splash-container">
+    <div className="splash">
+        <h1 className="splash-head">Your Nutrition</h1>
+        <p className="splash-subhead">
+            Get Fast, Reliable Health Nutrition Information on the Go 
+        </p>
+        <p>
+            <Link to ="/Signup" className="pure-button pure-button-primary">Get Started</Link>
+        </p>
+    </div>
+</div>
+  
+  
+
+<div className="content-wrapper">
+    <div className="content">
+       <h2 className="content-head is-center">Look Up Nutritional Information for Millions of foods </h2>
+        
+    </div>
+
+    <div className="ribbon l-box-lrg pure-g">
+        <div className="l-box-lrg is-center pure-u-1 pure-u-med-1-2 pure-u-lrg-2-5">
+            <img className="pure-img-responsive" alt="File Icons" width="300" src="img/bg10.jpg"/>
+       
+        <div className="pure-u-1 pure-u-med-1-2 pure-u-lrg-3-5">
+
+            <h2 className="content-head content-head-ribbon">Powered by Fat Secret</h2>
+
+            <p>
+                Get Fast, Reliable Health Nutrition Information on the Go Convenient and easy way to make the healthy choice everytime. Never the APP allows you to look up nutritional information for millions of foods at the click of a button powerd by an extensive food database
+            </p>
+        </div>
+    </div>
+
+    <div className="content">
+        <h2 className="content-head is-center">Convenient and Easy Way to Make the Healthy Choice </h2>
+
+        <div className="pure-g">
+            
+
+            <div className="l-box-lrg pure-u-1 pure-u-med-3-5">
+                <h4>Contact Us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                </p>
+
+                <h4>More Information</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>
 
   
-</div>
+
    
     );
   }
