@@ -48,7 +48,7 @@ var Profile = React.createClass({
                    <li><Link to="/dashboard"><span className="glyphicon glyphicon-dashboard"></span> Dashboard</Link></li>
                 </ul>
                    <ul className="nav navbar-nav navbar-right"> 
-                        <li><Link to="/profile">My Profile</Link></li>
+                        <li><Link to="/landing"><span className='glyphicon glyphicon-option-horizontal'/>Log-Out</Link></li>
 
                    </ul>
               </div>

@@ -20,12 +20,12 @@ var Dashboard = React.createClass({
 		            <div className='navbar-header' />
 		              <div className='collapse navbar-collapse' id='myNavbar'>
 		                <ul className='nav navbar-nav navbar-left'>
-		                  <li><Link to="/landing"><span className='glyphicon glyphicon-cloud'/>Home</Link></li>  
+		                  <li><Link to="/landing"><span className="glyphicon glyphicon-cloud"/>Home</Link></li>  
 		                   <li><Link to="/dashboard"><span className="glyphicon glyphicon-dashboard"></span> Dashboard</Link></li>
 		                </ul>
 		                   <ul className="nav navbar-nav navbar-right"> 
-		                        <li><Link to="/profile">My Profile</Link></li>
-
+		                        <li><Link to="/profile"><span className='glyphicon glyphicon-eye-open'/> My Profile</Link></li>
+		                        <li><Link to="/landing"><span className='glyphicon glyphicon-option-horizontal'/> Log-Out</Link></li>
 		                   </ul>
 		              </div>
 		            </div>      
