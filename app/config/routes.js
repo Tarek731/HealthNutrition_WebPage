@@ -34,6 +34,7 @@ module.exports = (
 
 
       {/* If user selects Child1 then show the appropriate component*/}
+
       <Route path="login" component={Login} />
         <Route path="profile/:user" component={Profile} />
         <Route path="loginrequired" component={LoginRequired} />

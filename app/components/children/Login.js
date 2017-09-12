@@ -2,7 +2,7 @@ import {hashHistory} from 'react-router';
 // Include React
 
 var React = require("react");
-var Login = require("./Login")
+var Login = require("./Login");
 
 
 
@@ -81,7 +81,7 @@ console.log('*'+user+'*')
     }
 
     return (
-        <div className="display">
+      <div className="display">
 			<section id="login">
                 <div className="container">
                     <div className="row">

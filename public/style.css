@@ -1,3 +1,11 @@
+.panel{
+
+       margin-top: 53px;
+   }
+
+body {
+    background: url("img/white_carbon.png");
+}
 .row{
     margin-bottom: 77px;
 }

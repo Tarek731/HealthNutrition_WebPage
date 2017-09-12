@@ -9,22 +9,24 @@ var Main = React.createClass({
   render: function () {
     return (
       <div>
-        <nav className='navbar navbar-default'>
-          <div className='container-fluid'>
+      <nav className='navbar navbar-default'>
+        <div className='container-fluid'>
             <div className='navbar-header' />
-            <div className='collapse navbar-collapse' id='myNavbar'>
-              <ul className='nav navbar-nav navbar-left'>
-                <li><Link to='/landing'><span className='glyphicon glyphicon-cloud' /> Home</Link></li>
-                <li><Link to="/dashboard"><span className="glyphicon glyphicon-dashboard"></span> Dashboard</Link></li>
-              </ul>
-                    <ul className="nav navbar-nav navbar-right">
-                        <li><Link to="/profile">My Profile</Link></li>
+              <div className='collapse navbar-collapse' id='myNavbar'>
+                <ul className='nav navbar-nav navbar-left'>
+                  <li><Link to="/landing"><span className='glyphicon glyphicon-cloud'/>Home</Link></li>  
+                   <li><Link to="/dashboard"><span className="glyphicon glyphicon-dashboard"></span> Dashboard</Link></li>
+                </ul>
+                   <ul className="nav navbar-nav navbar-right"> 
                         <li><Link to="/signup"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
                         <li><Link to="/login"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
-                    </ul>
-            </div>
-          </div>      
-        </nav>      
+                        <li><Link to="/profile">My Profile</Link></li>
+
+                   </ul>
+              </div>
+            </div>      
+      
+  </nav>      
           
             <div className="row">
               {this.props.children}
