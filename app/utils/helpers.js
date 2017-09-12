@@ -17,7 +17,7 @@ module.exports = {
   getUser: function(searchParams){
   	return axios.get("/users/profile/"+ searchParams.username);
   }
-  
+
   
 
 

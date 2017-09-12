@@ -1,6 +1,11 @@
-#dashcontainer
-{
-background-image: url("img/congruent_pentagon.png"); 
+
+.panel{
+
+       margin-top: 53px;
+   }
+
+body {
+    background: url("img/white_carbon.png");
 
 }
 .row{
