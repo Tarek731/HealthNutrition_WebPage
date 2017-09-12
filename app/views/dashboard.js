@@ -12,9 +12,10 @@ var Dashboard = React.createClass({
  	},
 	render: function() {
 		return (
-			<div className="container panel panel-default">
+			<div className="container panel panel-default" id="dashpanel">
+			
 				<h1>Dashboard</h1>
-				<h1> </h1>
+	
 				<div id="my_container" className="fatsecret_container"></div>
 			</div>   
 		);
