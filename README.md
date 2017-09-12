@@ -15,6 +15,11 @@ powerd by an extensive food database
 >4. Daily food Diary and food response log(feelings after eating food)
 >5. Find nearest food store with wanted food.
 ___
+### ScreenShots
+![image](https://user-images.githubusercontent.com/25464867/30344696-5a200606-97d0-11e7-89bd-80b8a765e5ef.png)
+
+
+
 ### Roles
 >Back-end: Chiraq, Juan
 Front-end: Tarek, Parita
