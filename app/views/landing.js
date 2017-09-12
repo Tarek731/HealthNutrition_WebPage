@@ -39,7 +39,7 @@ var Landing = React.createClass({
 
     <div className="ribbon l-box-lrg pure-g">
         <div className="l-box-lrg is-center pure-u-1 pure-u-med-1-2 pure-u-lrg-2-5">
-            <img className="pure-img-responsive" alt="File Icons" width="300" src="img/bg10.jpg"/>
+            <img className="pure-img-responsive" alt="File Icons" width="300" src="img/bg12.jpg"/>
        
         <div className="pure-u-1 pure-u-med-1-2 pure-u-lrg-3-5">
 
@@ -58,16 +58,7 @@ var Landing = React.createClass({
             
 
             <div className="l-box-lrg pure-u-1 pure-u-med-3-5">
-                <h4>Contact Us</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                </p>
-
-                <h4>More Information</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                
             </div>
         </div>
 

@@ -1,4 +1,6 @@
-
+.fatsecret_container{
+        margin-bottom: 38px;
+}
 .browse{
 margin-top: 49px;
 }
@@ -7,16 +9,20 @@ margin-top: 49px;
     margin-top: 49px;
 }
 .panel{
-
+    background-color: rgb(245, 245, 245);
        margin-top: 53px;
    }
 
-body {
+.panel-default{
+        border-color: #080808;
+}
+/*body {
  background-image: url("img/congruent_pentagon.png"); 
 
-}
+}*/
 .row{
     margin-bottom: 77px;
+  background-image: url("img/congruent_pentagon.png");   
 }
 #login{
  background-image: url("img/congruent_pentagon.png"); 
@@ -1048,7 +1054,7 @@ h3 {
 body {
     line-height: 1.7em;
     color: black;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 h1,
@@ -1064,6 +1070,7 @@ label {
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
+    padding-top: 45px;
 }
 
 /*
@@ -1077,6 +1084,7 @@ label {
 .l-box-lrg {
     padding: 2em;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    
 }
 
 .is-center {
@@ -1227,7 +1235,7 @@ a.pure-button-primary {
 
 /* This is the class used for the main content headers (<h2>) */
 .content-head {
-    color: #1f8dd6;
+     color: #f5f5f5;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -1249,7 +1257,7 @@ a.pure-button-primary {
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background-image: url("img/congruent_pentagon.png"); 
+   background-color: white; 
 
 }
 
@@ -1272,6 +1280,8 @@ a.pure-button-primary {
     /* We want to give the content area some more padding */
     .content {
         padding: 1em;
+    background-image: url("img/bg9.jpg"); 
+
     }
 
     /* We can align the menu header to the left, but float the
@@ -1302,7 +1312,7 @@ a.pure-button-primary {
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
-        
+        padding: 0px;
         border: none;
     }
 
