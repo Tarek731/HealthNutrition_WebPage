@@ -12,7 +12,8 @@ var Dashboard = React.createClass({
  	},
 	render: function() {
 		return (
-			<div className="container">
+			<div className="container">      
+
 				<h1>Dashboard Page</h1>
 				<h1> </h1>
 				<div id="my_container" className="fatsecret_container"></div>

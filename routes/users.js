@@ -43,12 +43,13 @@ router.post('/sign-up', function(req, res){
 			if(err) throw err;
 			console.log(" user route " + user);
       console.log("User.createUser complete,  callback function finished...");
-      res.send("Done");
+      
+      //Set success message
+    req.flash('success_msg', 'You are registered and can now login');
+    res.send(user);
 		});
 
-		//Set success message
-		//req.flash('success_msg', 'You are registered and can now login');
-		//res.redirect('/users/login');
+		
 	}
 
 

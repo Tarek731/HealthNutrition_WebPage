@@ -37,32 +37,72 @@ var Signup = React.createClass({
   handleSignup(event) {
   	event.preventDefault();
     console.log("sign up button clicked")
+
+    var pw = this.state.password
   //   var username = this.state.username
   //   console.log(username + ' is the username inside login')
   //   console.log('the total data is :' + this.state.firstname, this.state.lastname, this.state.email, this.state.password);
     helpers.registerUser({ 
       username: this.state.username,
-      password: this.state.password,
+      password: pw,
       email: this.state.email
 
     }).then(function(response){
       console.log("handleSignup - helper.registerUser.then() started")
-    	console.log(response);
+    	console.log(" this is the response with the user!!!!!!!" , response.data.username, response.data.password);
+      console.log("these are the passwords" , pw)
+      var username = response.data.username;
+      // var password = this.state.password;
+
+
+      helpers.loginUser({ 
+      username: username,
+      password: pw
+    }).then(function(response, username){
 
       var user = JSON.parse(response.config.data).username
         console.log("RESULTS", response.data.authenticated);
         var isAuthenticated = response.data.authenticated;
-		console.log('*'+user+'*')
+console.log('*'+user+'*')
         if(isAuthenticated){
           document.cookie = "user="+user;
           var x = document.cookie
           console.log("cookie " + x)
-          hashHistory.push('/profile/'+ user)
+          // hashHistory.push('/profile/'+ user)
           // window.location.href = "/#/profile";
+          window.location.href = "/dashboard";
         } else {
           // show error and stay on apge
           alert("failed to authenticate");
         }
+    }).catch(function(err) {
+     console.log("inside handleLogin Catch()", JSON.stringify(err, null, 2));
+     console.log(err);
+
+      if(err.response.status == 401) {
+        alert("That Username and Password is not valid. Please sign-up on the Sign Up link");
+      }
+
+    })
+
+
+
+
+
+  //     var user = JSON.parse(response.config.data).username
+  //       console.log("RESULTS", response.data.authenticated);
+  //       var isAuthenticated = response.data.authenticated;
+		// console.log('*'+user+'*')
+  //       if(isAuthenticated){
+  //         document.cookie = "user="+user;
+  //         var x = document.cookie
+  //         console.log("cookie " + x)
+  //         hashHistory.push('/profile/'+ user)
+  //         // window.location.href = "/#/profile";
+  //       } else {
+  //         // show error and stay on apge
+  //         alert("failed to authenticate");
+  //       }
     })
     
   },
