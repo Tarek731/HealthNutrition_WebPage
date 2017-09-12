@@ -13,8 +13,10 @@
   "author": "Juan Ossa",
   "license": "ISC",
   "dependencies": {
+    "async-each": "^1.0.1",
     "axios": "^0.16.2",
     "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.0",
     "body-parser": "*",
     "bootstrap": "^4.0.0-alpha.6",
     "connect-flash": "^0.1.1",
