@@ -22,7 +22,7 @@ var Main = require("../components/Main");
 var Login = require("../components/children/Login");
 var Signup = require("../components/children/Signup");
 // var Landing = require("../views/Landing")
-var Landing = require("../views/Landing");
+import Landing from "../views/Landing";
 var Register = require("../components/children/Register");
 var LoginRequired = require("../components/children/LoginRequired");
 var Dashboard = require("../views/Dashboard");
