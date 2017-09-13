@@ -54,7 +54,7 @@ var Profile = React.createClass({
               </div>
             </div>      
       
-    </nav> 
+    </nav>  
 
 
 <section className="clearfix bg-dark profileSection homeBanner">
