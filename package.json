@@ -1,0 +1,63 @@
+{
+  "name": "react-example",
+  "version": "1.0.0",
+  "description": ">Get Fast, Reliable Health Nutrition Information on the Go Convenient and easy way to  make the healthy choice everytime.  Never  the APP allows you to look up nutritional information for millions of foods at the click of a button powerd by an extensive food database",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "node test/test.js",
+    "dev": "webpack -w",
+    "build": "webpack -p",
+    "heroku-postbuild": "npm install -g webpack; webpack -p",
+    "start": "node server.js"
+  },
+  "author": "Juan Ossa",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "async-each": "^1.0.1",
+    "async.each": "^0.5.2",
+    "axios": "^0.16.2",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "*",
+    "bootstrap": "^4.0.0-alpha.6",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.0",
+    "mongodb": "^2.2.29",
+    "mongoose": "^4.10.8",
+    "morgan": "^1.8.2",
+    "oauth-signature": "^1.3.1",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "react": "^0.14.9",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^0.14.9",
+    "react-router": "^2.4.1",
+    "react-transition-group": "^1.2.0",
+    "reactstrap": "^4.6.2",
+    "request": "^2.81.0",
+    "unix-timestamp": "^0.2.0",
+    "yelp-fusion": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^1.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarek731/HealthNutrition_WebPage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tarek731/HealthNutrition_WebPage/issues"
+  },
+  "homepage": "https://github.com/Tarek731/HealthNutrition_WebPage#readme"
+}
