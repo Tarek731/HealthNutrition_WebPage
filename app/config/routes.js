@@ -17,7 +17,7 @@ var browserHistory = router.browserHistory;
 
 // Include the IndexRoute (catch-all route)
 var IndexRoute = router.IndexRoute;
-var Profile = require("../components/children/Profile");
+// var Profile = require("../components/children/Profile");
 var Main = require("../components/Main");
 var Login = require("../components/children/Login");
 var Signup = require("../components/children/Signup");
@@ -36,13 +36,13 @@ module.exports = (
       {/* If user selects Child1 then show the appropriate component*/}
 
       <Route path="login" component={Login} />
-        <Route path="profile/:user" component={Profile} />
+      
         <Route path="loginrequired" component={LoginRequired} />
 
       <Route path="signup" component={Signup} />
       <Route path="landing" component={Landing} />
       
-      <Route path="profile" component={Profile} />
+ 
         <Route path="register" component={Register} />
         <Route path="dashboard" component={Dashboard} />
 
