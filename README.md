@@ -15,9 +15,26 @@ powerd by an extensive food database
 >4. Daily food Diary and food response log(feelings after eating food)
 >5. Find nearest food store with wanted food.
 ___
+### ScreenShots
+![1](https://user-images.githubusercontent.com/25464867/30345146-0e710334-97d2-11e7-8054-7221ea7de2a0.png)
+
+![2](https://user-images.githubusercontent.com/25464867/30345149-11343884-97d2-11e7-9f6b-e8d739467f2a.png)
+
+![4](https://user-images.githubusercontent.com/25464867/30345153-16e8cf9c-97d2-11e7-9d9b-c2a103c68454.png)
+
+![5](https://user-images.githubusercontent.com/25464867/30345154-16ed8c6c-97d2-11e7-8bd9-85aba2dc369a.png)
+
+![6](https://user-images.githubusercontent.com/25464867/30345152-16e906e2-97d2-11e7-8a4d-1c4814d06fe9.png)
+
+![3](https://user-images.githubusercontent.com/25464867/30345155-16ee5322-97d2-11e7-885e-d79ff367d0cc.png)
+
+![7](https://user-images.githubusercontent.com/25464867/30345165-1ab8af48-97d2-11e7-9ffd-e39479525a75.png)
+
+
+
 ### Roles
->Back-end: Chiraq, Juan
-Front-end: Tarek, Parita
+Back-end: Tarek, Chriaq
+Front-end: Juan, Parita, John
 
 ___
 ### Functionality
