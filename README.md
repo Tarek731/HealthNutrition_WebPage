@@ -15,26 +15,25 @@ powerd by an extensive food database
 >4. Daily food Diary and food response log(feelings after eating food)
 >5. Find nearest food store with wanted food.
 ___
-### ScreenShots
-![1](https://user-images.githubusercontent.com/25464867/30345146-0e710334-97d2-11e7-8054-7221ea7de2a0.png)
+### ScrenShots
+![1](https://user-images.githubusercontent.com/25464867/30353139-36e7e97a-97f2-11e7-8176-f75ccc263b75.png)
 
-![2](https://user-images.githubusercontent.com/25464867/30345149-11343884-97d2-11e7-9f6b-e8d739467f2a.png)
+![2](https://user-images.githubusercontent.com/25464867/30353140-36eb1ad2-97f2-11e7-8f8c-b75d0e3057cb.png)
 
-![4](https://user-images.githubusercontent.com/25464867/30345153-16e8cf9c-97d2-11e7-9d9b-c2a103c68454.png)
+![3](https://user-images.githubusercontent.com/25464867/30353143-395dd46c-97f2-11e7-8f16-767d010f25c4.png)
 
-![5](https://user-images.githubusercontent.com/25464867/30345154-16ed8c6c-97d2-11e7-8bd9-85aba2dc369a.png)
+![4](https://user-images.githubusercontent.com/25464867/30353142-395cc1da-97f2-11e7-904d-96ad939e1ef9.png)
 
-![6](https://user-images.githubusercontent.com/25464867/30345152-16e906e2-97d2-11e7-8a4d-1c4814d06fe9.png)
+![7](https://user-images.githubusercontent.com/25464867/30353248-cc4e9766-97f2-11e7-8e75-932ff1f84f19.png)
 
-![3](https://user-images.githubusercontent.com/25464867/30345155-16ee5322-97d2-11e7-885e-d79ff367d0cc.png)
+![6](https://user-images.githubusercontent.com/25464867/30353144-3961c13a-97f2-11e7-9c66-1be62048f62f.png)
 
-![7](https://user-images.githubusercontent.com/25464867/30345165-1ab8af48-97d2-11e7-9ffd-e39479525a75.png)
-
+![7](https://user-images.githubusercontent.com/25464867/30353145-39651650-97f2-11e7-90a2-2a5b00dca9ea.png)
 
 
 ### Roles
-Back-end: Tarek, Chriaq
-Front-end: Juan, Parita, John
+>Back-end: Chiraq, Juan
+Front-end: Tarek, Parita
 
 ___
 ### Functionality
