@@ -13,7 +13,9 @@
   "author": "Juan Ossa",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.5.0",
     "async-each": "^1.0.1",
+    "async.each": "^0.5.2",
     "axios": "^0.16.2",
     "bcryptjs": "^2.4.3",
     "bluebird": "^3.5.0",
