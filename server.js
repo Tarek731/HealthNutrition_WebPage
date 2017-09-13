@@ -57,14 +57,14 @@ app.use(expressValidator({
 
 
 // MongoDB Configuration configuration (Change this URL to your own DB)
-// if (process.env.MONGODB_URI) {
-//   mongoose.connect(process.env.MONGODB_URI)
-// } else {
-//   mongoose.connect('mongodb://trekitout:trekitout@ds129422.mlab.com:29422/heroku_b2rft21n');
-// }
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI)
+} else {
+  mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds135444.mlab.com:35444/heroku_9cg7cq4k');
+}
 
 
-mongoose.connect("mongodb://localhost/Health");
+// mongoose.connect("mongodb://localhost/Health");
 // mongoose.connect('mongodb://trekitout:trekitout@ds129422.mlab.com:29422/heroku_b2rft21n');
 // Init mongodb
 mongoose.Promise = Promise;
