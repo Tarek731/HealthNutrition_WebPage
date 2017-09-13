@@ -77,6 +77,10 @@ h3 {
 
 #login .form-wrap {
     width: 30%;
+    margin-left: 383px;
+    background-color: rgba(245, 245, 245, 0.6);
+    padding: 33px;
+
 }
 
 #login h1 {
